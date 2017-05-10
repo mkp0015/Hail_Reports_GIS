@@ -17,7 +17,7 @@ import arcpy
 
 #declare variables
 source_workspace = arcpy.GetParameterAsText(0)
-out_gdb = arcpy.GetParameterAsText(1)
+out_gdb = arcpy.GetParameterAsText(1) #must provide geodatabase name with file extension! ex: 'storm_events.gdb'
 
 #set environment workspace, enable file overwrite
 arcpy.env.workspace = source_workspace
